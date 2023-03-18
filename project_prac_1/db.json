@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "깻잎논쟁",
+      "optionA": "떼어준다",
+      "optionB": "죽인다"
+    },
+    {
+      "id": 2,
+      "title": "남사친여사친",
+      "optionA": "된다",
+      "optionB": "미쳤냐"
+    },
+    {
+      "id": 3,
+      "title": "찍먹부먹",
+      "optioneA": "찍먹",
+      "optionB": "부먹"
+    },
+    {
+      "tilte": "",
+      "optionA": "asd",
+      "optionB": "asdasd",
+      "title": "asd",
+      "id": 10
+    },
+    {
+      "tilte": "",
+      "optionA": "제발",
+      "optionB": "제바류ㅠ",
+      "title": "되는건가?",
+      "id": 11
+    }
+  ]
+}
