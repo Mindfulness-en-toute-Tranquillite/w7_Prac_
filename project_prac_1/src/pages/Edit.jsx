@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useState } from 'react'
 import { useDispatch, } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -17,12 +16,9 @@ function Edit() {
     })
     console.log("card =>", card)
 
-    const [title, setTitle] = useState("");
-    const [optionA, setOptionA] = useState("");
-    const [optionB, setOptionB] = useState("");
-    // console.log("title ->", title)
-    // console.log("gameA ->", gameA)
-    // console.log("gameB ->", gameB)
+    // const [title, setTitle] = useState("");
+    // const [optionA, setOptionA] = useState("");
+    // const [optionB, setOptionB] = useState("");
 
     // title 변경 감지하는 함수
     const handleTitleChange = (e) => {
@@ -44,10 +40,6 @@ function Edit() {
         setCard({title:'', optionA:'',optionB: ''})
     }
     
-    // = async (id) =>  {
-    //     axios.post(`http://localhost:4000/cards`, {title, optionA, optionB})
-    //     fetchCards();}
-
 
     return (
     <form>

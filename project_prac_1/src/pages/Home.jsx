@@ -7,6 +7,7 @@ function Home() {
     return (
     <>
         <StHomeCardWrapper>
+            <StLogoImg />
         <h1>게임 설명</h1>
             <StExplanationWrapper>
                 <div>balance game.
@@ -31,6 +32,18 @@ function Home() {
 }
 
 export default Home
+
+const StLogoImg = styled.div`
+    background-image: url('http://images.shoutwiki.com/dyos/4/47/Spongebob.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 const StHomeCardWrapper = styled.div`
     display: flex;
     flex-direction: column;

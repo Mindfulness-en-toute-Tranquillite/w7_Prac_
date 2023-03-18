@@ -14,24 +14,12 @@ function CardList() {
 
     const dispatch = useDispatch()
     const {cards, error} = useSelector((state) => state.cardsSlice)
-
+    console.log("cards => ", cards )
     useEffect(() => {
         dispatch(__getCardsThunk())
     }, [dispatch])
-
-    // 조회함수
-    // const fetchCards = async () => {
-    //     const { data } = await axios.get('http://localhost:4000/cards');
-    //     setCards(data)
-    // };
-
-    // 랜더링 되자마자 바로 리스트 조회함수 불러오기(by useEffect).
-    // useEffect(()=>{
-    //     fetchCards()
-    // }, []);
-
+    console.log("dispatch get ->", dispatch)
     
-
     return (
     <>
         <div>

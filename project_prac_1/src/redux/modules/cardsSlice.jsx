@@ -7,20 +7,21 @@ export const __getCardsThunk = createAsyncThunk(
     'GET_CARDS',
     async (_, thunkAPI) => {
         try {
-            const { data } = await axios.get('http://localhost:4000/cards')
+            const { data } = await axios.get('http://3.38.102.57:3000/api/games')
             return thunkAPI.fulfillWithValue(data)
         }   catch (e) {
             return thunkAPI.rejectWithValue(e.code)
         }
-    }
+    }   
 )
+
 
 // card 추가 Thunk
 export const __addCardsThunk = createAsyncThunk(
     'ADD_CARDS',
     async (payload, thunkAPI) => {
         try {
-            const { data } = await axios.post('http://localhost:4000/cards', payload)
+            const { data } = await axios.post('http://3.38.102.57:3000/api/games', payload)
             return thunkAPI.fulfillWithValue(data)
         }   catch (e) {
             return thunkAPI.rejectWithValue(e.code)
