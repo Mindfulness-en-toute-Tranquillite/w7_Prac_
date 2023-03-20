@@ -7,8 +7,13 @@ export const __getCardsThunk = createAsyncThunk(
     'GET_CARDS',
     async (_, thunkAPI) => {
         try {
-            const { data } = await axios.get('http://3.38.102.57:3000/api/games')
-            return thunkAPI.fulfillWithValue(data)
+            const { data } = await axios.get
+            (
+                'http://43.201.20.151/api/games'
+                // `${process.env.REACT_APP_SERVER_URL}`
+            );
+            // console.log("data =>", data.games)
+            return thunkAPI.fulfillWithValue(data.games)
         }   catch (e) {
             return thunkAPI.rejectWithValue(e.code)
         }
@@ -21,8 +26,9 @@ export const __addCardsThunk = createAsyncThunk(
     'ADD_CARDS',
     async (payload, thunkAPI) => {
         try {
-            const { data } = await axios.post('http://3.38.102.57:3000/api/games', payload)
-            return thunkAPI.fulfillWithValue(data)
+            const { data } = await axios.post('http://43.201.20.151/api/games', payload)
+            console.log("data =>", data.games)
+            return thunkAPI.fulfillWithValue(data.games)
         }   catch (e) {
             return thunkAPI.rejectWithValue(e.code)
         }
