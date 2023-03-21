@@ -1,15 +1,15 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
-
+import api from "../../axios/api";
 // cards 조회 Thunk
 export const __getCardsThunk = createAsyncThunk(
     'GET_CARDS',
     async (_, thunkAPI) => {
         try {
-            const { data } = await axios.get
+            const { data } = await api.get
             (
-                'http://43.201.20.151/api/games'
+                "/games"
+                // 'http://43.201.20.151/api/games'
                 // `${process.env.REACT_APP_SERVER_URL}`
             );
             // console.log("data =>", data.games)
@@ -26,7 +26,8 @@ export const __addCardsThunk = createAsyncThunk(
     'ADD_CARDS',
     async (payload, thunkAPI) => {
         try {
-            const { data } = await axios.post('http://43.201.20.151/api/games', payload)
+            const { data } = await api.post
+            ('/games', payload)
             console.log("data =>", data.games)
             return thunkAPI.fulfillWithValue(data.games)
         }   catch (e) {
