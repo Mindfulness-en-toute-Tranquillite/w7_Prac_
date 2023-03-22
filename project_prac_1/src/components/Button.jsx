@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-const Button = (props) => {
+const Button = ({children, css }) => {
     return (
-        <StStartButton {...props}>
-            {props.children}
+        <StStartButton css={css}>
+        children
         </StStartButton>
     )
 }
 /* CSS */
 export const StStartButton = styled.button`
+    ${({css}) => ({...css})}
     background-color: #111827;
     border: 1px solid transparent;
     border-radius: 75rem;
