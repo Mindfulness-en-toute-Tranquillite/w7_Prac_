@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import apis from '../axios/api';
+import { cookies } from '../shared/cookie';
 
 function Register() {
     const navigate = useNavigate();
     const [user, setUser] = useState({
-        id: "",
+        nickname: "",
         password: "",
+        confirmPassword: "",
     });
 
     const changeInputHandler = (e) => {
@@ -18,8 +21,8 @@ function Register() {
     
     const submitButtonHandler = (e) => {
         e.preventDefault();
-
-        console.log(user);
+        apis.post("/register", user);
+        // console.log(user);
     };
 
     console.log(user);
@@ -29,8 +32,8 @@ function Register() {
         <h1>회원가입</h1>
         <div>
             <div>
-                <input type="text" value={user.id} placeholder="아이디를 입력해주세요" 
-                name='id'
+                <input type="text" value={user.nickname} placeholder="아이디를 입력해주세요" 
+                name='nickname'
                 onChange={changeInputHandler}/>
                 
                 <input type="password"value={user.password} placeholder="비밀번호를 입력해주세요" 
@@ -42,6 +45,12 @@ function Register() {
             <button >회원가입</button>
             <button type="button" 
             onClick={() => navigate("/login")}>이전으로</button>
+            <button
+            onClick={() => {
+                cookies.remove("token")
+                navigate("/login");
+            }}
+            >로그아웃</button>
         </div>
         </form>
     )
