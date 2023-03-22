@@ -49,7 +49,7 @@ function CardList() {
                 })
             }
         </div>
-
+        
 
     </StBackGroundImg>
 

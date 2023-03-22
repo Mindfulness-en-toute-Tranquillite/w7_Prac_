@@ -15,8 +15,8 @@ function LogoutHome() {
             },
         });
     } catch (e) {
-        alert('비정상적인 접근입니다.')
-        navigate("/login")
+        // alert('비정상적인 접근입니다.')
+        navigate("/login") 
     }
     };
 

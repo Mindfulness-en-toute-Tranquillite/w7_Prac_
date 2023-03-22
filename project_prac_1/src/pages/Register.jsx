@@ -45,13 +45,9 @@ function Register() {
             <button >회원가입</button>
             <button type="button" 
             onClick={() => navigate("/login")}>이전으로</button>
-            <button
-            onClick={() => {
-                cookies.remove("token")
-                navigate("/login");
-            }}
-            >로그아웃</button>
+            
         </div>
+
         </form>
     )
 }

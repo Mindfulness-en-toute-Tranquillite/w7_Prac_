@@ -47,6 +47,11 @@ function Login() {
         //     console.log(token)
         // }, [token]);
 
+        // 가드
+        const token = cookies.get("token")
+        if(token) {
+            navigate("/games");
+        }
     console.log(user);
 
     return (
