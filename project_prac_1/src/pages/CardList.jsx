@@ -68,7 +68,7 @@ const StCardList = styled.div`
     cursor: pointer;
 `
 const StBackGroundImg = styled.div`
-    background-image: url('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1a08c564-2757-4fe9-84f0-f78d551581bd/cardlist.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230320%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230320T104844Z&X-Amz-Expires=86400&X-Amz-Signature=c7fa241efe4eff438a3ef3750fc68cc27ec43505a2dfbe45691c65dfebc47005&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22cardlist.png%22&x-id=GetObject');
+    background-image: url('https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1a08c564-2757-4fe9-84f0-f78d551581bd%2Fcardlist.png?id=bc056553-170e-4f5e-bc2b-9bcf92027bed&table=block&spaceId=cc4da40c-bf96-414a-a09f-a7f478e1d2c5&width=2000&userId=3f23687d-17d1-4fb1-a726-fbd8eb60ed0a&cache=v2');
     background-size: cover;
     background-position: center;
     width: 100vw;

@@ -115,7 +115,7 @@ const StTitleWrapper = styled.h2`
     margin-top: 30px;
 `
 const StBackGroundImg = styled.div`
-    background-image: url('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a0c212ed-307b-4240-9215-ff8740e341fb/submit.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230320%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230320T104541Z&X-Amz-Expires=86400&X-Amz-Signature=660d80a140bb18eb0b2e3926e8373f398e2aeddb515d85b88829f0d214b3ced1&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22submit.png%22&x-id=GetObject');
+    background-image: url('https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa0c212ed-307b-4240-9215-ff8740e341fb%2Fsubmit.png?id=7663bed5-1a41-4e64-91e2-cba35e3dc074&table=block&spaceId=cc4da40c-bf96-414a-a09f-a7f478e1d2c5&width=2000&userId=3f23687d-17d1-4fb1-a726-fbd8eb60ed0a&cache=v2');
     background-size: cover;
     background-position: center;
     width: 100vw;
