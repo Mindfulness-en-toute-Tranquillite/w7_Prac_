@@ -59,7 +59,6 @@ function Edit() {
                 type="text" placeholder='10자 내로 제목을 지어주세요.' minLength="1" maxLength="10"
                 value={card.title}
                 onChange={handleTitleChange}>
-                
                 </StInputBox>
                 </StInputBoxPutTogether>
 

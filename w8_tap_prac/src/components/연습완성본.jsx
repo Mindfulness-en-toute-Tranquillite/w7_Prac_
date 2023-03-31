@@ -42,6 +42,8 @@
 //   );
 // }
 
+
+//큰 틀
 import React, { useState } from 'react';
 
 function Prac() {

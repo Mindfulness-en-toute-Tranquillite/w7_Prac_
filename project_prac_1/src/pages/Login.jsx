@@ -35,7 +35,6 @@ function Login() {
         }   catch (e) {
             alert("로그인 실패")
         }
-
     };
         //  쿠키가 있는지 확인.
         //  쿠키가 있으면 gamelist로 보냄.
